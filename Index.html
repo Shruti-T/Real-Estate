@@ -12,17 +12,39 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha512-5WvZa4N7Jq3TVNCp4rjcBMlc6pT3lZ7gVxjtI6IkKW+uItSa+rFgtFljvZnCxQGj8SUX5DHraKE6Mn/4smK1Cg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous"></script>
 
 
     <title>HUB MARINE</title>
+    <!-- dark mode -->
+    <!-- <style>
+        @media(prefers-color-scheme:dark) {
+            .navbar {
+                background-color: black;
+            }
+
+            .Map {
+                background: blue;
+            }
+        }
+    </style> -->
 </head>
 
 <body onload="codeLoaded()">
 
     <div id="preloading">
     </div>
-
+    <!-- ************Header part Starts****** -->
     <div class="header" id="menuBar">
         <nav class="navbar navbar-expand-lg ">
             <div class="container p-2">
@@ -59,56 +81,159 @@
                 <form class="form-inline my-2 my-lg-0 searchBar">
                     <input class="form-control mr-sm-2 searchInput" type="search"
                         placeholder="Enter a city or zip code." aria-label="Search">
+                    <!-- <select class="form-control mr-sm-2 searchInput ">
+                        <option>hello</option>
+                    </select> -->
+
                     <button class="btn btn-success my-2 my-sm-0 " id="searchbtn" type="submit">
                         Search
                     </button>
                 </form>
-            </div>
         </section>
     </div>
 
-    <!-- ************Header part ends****** -->
 
-    <!-- *********************Map and city*******************
-    <section class="Map">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    hellofff
-                </div>
-                <div class="col">
-                    <img src="../Images/map.jpg">
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- ******************Header portion of 3 blocks starts************* -->
+    <!-- ******************Service given in header starts************* -->
     <section class="HeaderService" style="color:#3d82d6;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-12 ServiceOnHome">
-                    <a herf="#""><i class=" fa-3x fas fa-home"></i><a>
-                            <h2>Buy a home</h2>
-                            <p>Find your place with an immersive photo experience,including things you won't find
-                                anywhere else.</p>
+                    <a herf="#""><i class=" fa-3x fas fa-home"></i></a>
+                    <h2>Buy a home</h2>
+                    <p>Find your place with an immersive photo experience,including things you won't find
+                        anywhere else.</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-12 ServiceOnHome">
-                    <a herf="#""><i class=" fa-3x fas fa-sign"></i><a>
-                            <h2>Sell a home</h2>
-                            <p>Connect with millions of renters and lease your property 100% online.</p>
+                    <a herf="#""><i class=" fa-3x fas fa-sign"></i></a>
+                    <h2>Sell a home</h2>
+                    <p>Connect with millions of renters and lease your property 100% online.</p>
                 </div>
                 <div class=" col-lg-4 col-md-4 col-12 ServiceOnHome">
-                    <a herf="#""><i class=" fa-3x fas fa-truck-moving"></i><a>
-                            <h2>Rent a home</h2>
-                            <p>We're creating a seamless online experience from shopping on the largest rental network,
-                                to applying, to paying rent.</p>
+                    <a herf="#""><i class=" fa-3x fas fa-truck-moving"></i></a>
+                    <h2>Rent a home</h2>
+                    <p>We're creating a seamless online experience from shopping on the largest rental network,
+                        to applying, to paying rent.</p>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ******************Header portion of 3 blocks ends************* -->
 
+
+    <!-- *********************Map and city*******************-->
+    <section class="Map" id="MapAndCity">
+        <div class="container heading text-center">
+            <h1 class="text-center font-weight-bold">MAP AND CITY</h1>
+            <P class="text-center">Find The Desired Home In Your Area </P>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-12 offset-1 offset-lg-0">
+                        <div class="names my-3">
+                            <h2 class="Cities-list">Top Cities</h2>
+                            <ul class="Cities-list">
+                                <li> In Wood Bay (Zip code:205010)</li>
+                                <li> Murky City (Zip code:203200)</li>
+                                <li> Bed Sea (Zip code:205014)</li>
+                                <li> Rikers Reef (Zip code:706015)</li>
+                                <li> Meadow Sands (Zip code:705020)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12 offset-1 offset-lg-0">
+                        <!-- <img class="mapImg" src="C:/Users/shrut/OneDrive/Desktop/GitHub/Real-Estate/Images/map.jpg"> -->
+                        test test test
+                    </div>
+                    <!-- <img src="C:/Users/shrut/OneDrive/Desktop/GitHub/Real-Estate/Images/map.jpg"> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- *******************************Service provided starts************************** -->
+    <section class="service_provided">
+        <div class="container headings text-center">
+            <p class="text-center font-weight-bold">Search over 1.1 million listings.</p>
+        </div>
+
+        <div class="container d-flex justify-content-around align-items-center text-center">
+            <div>
+                <h1 class="count">3650</h1>
+                <p>Recently Sold</p>
+            </div>
+            <div>
+                <h1 class="count">1245</h1>
+                <p>Homes For Sale</p>
+            </div>
+            <div>
+                <h1 class="count">529</h1>
+                <p>Awards Won</p>
+            </div>
+            <div>
+                <h1 class="count">900</h1>
+                <p>Happy Clients</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ********Amenities********** -->
+    <section class="Amenities" id="Amenities">
+        <div class="container heading text-center">
+            <h1 class=" text-center font-weight-bold text-white">Specific Home Amenities</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div class="card text-center">
+                        <!-- <img class="card-img-top" src="../Real-Estate/Images/15.jpg" alt="Card image"
+                            style="width:100%"> -->
+                        <div class="card-header">LOCATION</div>
+                        <div class="card-body">
+                            <li>seascape</li>
+                            <li>Coral View</li>
+                            <li>Transport</li>
+                            <li>Central Hub</li>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card text-center">
+                        <!-- <img class="card-img-top" src="../Real-Estate/Images/15.jpg" alt="Card image"
+                            style="width:100%"> -->
+                        <div class="card-header ">STYLE</div>
+                        <div class="card-body">
+                            <li>Colonial</li>
+                            <li>Contemporary</li>
+                            <li>Bungalow</li>
+                            <li>A-frame</li>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Know More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                    <div class="card text-center">
+                        <!-- <img class="card-img-top" src="../Real-Estate/Images/15.jpg" alt="Card image"
+                            style="width:100%"> -->
+                        <div class="card-header ">MEMBERSHIPS</div>
+                        <div class="card-body">
+                            <li>Library</li>
+                            <li>Gym</li>
+                            <li>Cultural Program</li>
+                            <li>Parking</li>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#">Know More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src=" Main.js"></script>
 </body>
