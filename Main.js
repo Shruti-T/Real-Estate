@@ -13,7 +13,27 @@ $('.count').counterUp(
 )
 
 
+
+document.getElementById('search').onclick = function () {
+
+    var searchValue = document.getElementById('searchInput').value.toLowerCase();
+
+    console.log(searchValue);
+
+    if (searchValue == 'inwood bay' || searchValue == 'murky city' || searchValue == 'bed city' || searchValue == 'shell sea' || searchValue == 'rikers reef' || searchValue == 'sinkin square' || searchValue == 'green port' || searchValue == 'meadow sands' || searchValue == 'sea floria') {
+        window.location.href = 'file:///C:/Users/shrut/OneDrive/Desktop/GitHub/Real-Estate-website/Buy.html';
+    }
+    else if (searchValue == '') {
+        alert('Please fill in the details');
+    }
+    else {
+        alert('Sorry! We do not have homes available in this area. Try somewhere else.');
+    }
+}
+
+
 var cost1 = 0, cost2 = 0, cost3 = 0, cost4 = 0;
+
 document.getElementById('park').addEventListener('click', function () {
 
     var check1 = document.getElementById('park');
