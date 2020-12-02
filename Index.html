@@ -31,18 +31,7 @@
 
 
     <title>HUB MARINE</title>
-    <!-- dark mode -->
-    <!-- <style>
-        @media(prefers-color-scheme:dark) {
-            .navbar {
-                background-color: black;
-            }
-
-            .Map {
-                background: blue;
-            }
-        }
-    </style> -->
+    </style>
 </head>
 
 <body onload="codeLoaded()">
@@ -53,7 +42,7 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container p-2">
 
-                <a class="navbar-brand logo font-weight-bold" style="color:black" href="#">Aqua Abode</a>
+                <a class="navbar-brand logo font-weight-bold" style="color:black" href="index.html">Aqua Abode</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -68,31 +57,26 @@
                             <a class="nav-link" href="Buy.html">BUY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">ABOUT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
+                            <a class="nav-link" href="contact.html">CONTACT</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
+        <!-- *************************Search box********************** -->
         <section class="header-section container">
             <div class="center-div">
                 <h1 class="font-weight-bold">Discover Your New Home</h1>
                 <p>A Refreshingly Modern Way To Do Real Estate</p>
-                <form class="form-inline my-2 my-lg-0 searchBar">
+                <form class="form-inline my-2 my-lg-0 searchBar" id="searchbtn">
                     <input class="form-control mr-sm-2 searchInput" type="search"
-                        placeholder="Enter a city or zip code." aria-label="Search">
-                    <!-- <select class="form-control mr-sm-2 searchInput ">
-                        <option>hello</option>
-                    </select> -->
-
-                    <button class="btn btn-success my-2 my-sm-0 " id="searchbtn" type="submit">
+                        placeholder="Enter a city or zip code." required aria-label="Search">
+                    <button class="btn btn-success my-2 my-sm-0 " type="submit">
                         Search
                     </button>
                 </form>
+            </div>
         </section>
     </div>
 
@@ -214,7 +198,7 @@
                             <li>Central Hub</li>
                         </div>
                         <div class="card-footer">
-                            <a href="#">Know More</a>
+                            <a href="Buy.html">Know More</a>
                         </div>
                     </div>
                 </div>
@@ -228,7 +212,7 @@
                             <li>A-frame</li>
                         </div>
                         <div class="card-footer">
-                            <a href="#">Know More</a>
+                            <a href="Buy.html">Know More</a>
                         </div>
                     </div>
                 </div>
@@ -242,7 +226,7 @@
                             <li>Parking</li>
                         </div>
                         <div class="card-footer">
-                            <a href="#">Know More</a>
+                            <a href="Buy.html">Know More</a>
                         </div>
                     </div>
                 </div>
@@ -250,133 +234,6 @@
         </div>
     </section>
 
-    <!-- ********************Houses***************************** -->
-    <!-- <section class="Homes">
-        <div class="container homecards">
-            <div class="CardTitle">
-                <h1>LET'S GET STARTED!</h1>
-                <p>discover a place you'll love to live</p>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 pic HomeCard">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../Real-Estate/Images/ss.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 pic HomeCard">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../Real-Estate/Images/ss.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 pic HomeCard">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../Real-Estate/Images/ss.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 pic HomeCard">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../Real-Estate/Images/ss.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 pic HomeCard">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../Real-Estate/Images/ss.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 pic HomeCard">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../Real-Estate/Images/ss.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 pic HomeCard">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../Real-Estate/Images/ss.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 pic HomeCard">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../Real-Estate/Images/ss.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 pic HomeCard">
-                    <div class="card" style="width: 18rem;">
-                        <img src="../Real-Estate/Images/ss.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!--**********************Contact Us***********************************-->
-    <!-- <section class="contactUs" id="contactUs">
-        <div class="container  text-center">
-            <h1 class="text-center font-weight-bold contactTop">CONTACT US</h1>
-            <P class="text-center">heloo i want to test this portion. </P>
-        </div>
-    </section> -->
-
-    <!--**********************Footer***********************************-->
-    <!-- <footer class="footer">
-        <p>sometjve vejn coeg</p>
-    </footer> -->
 
     <script src=" Main.js"></script>
 </body>

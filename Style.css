@@ -26,7 +26,7 @@ p{
     font-size:1.2rem;
     line-height:1.6;
     font-weight: 450;
-    color:black;
+   
 }
 
 /* ************ Top of Home page *************** */
@@ -288,7 +288,7 @@ form{
 .Homes{
     width:100%;
     height:100vh;
-    background-image: linear-gradient(rgba(120,120,120,0.2),rgba(120,120,120,0.2)), url('../Real-Estate/Images/bg3.jpg');
+    background-image: linear-gradient(rgba(120,120,120,0.2),rgba(120,120,120,0.2)), url('../Real-Estate/Images/bg2.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     clip-path: polygon(100% 0, 100% 65%, 50% 87%, 0 65%, 0 0); 
@@ -371,12 +371,71 @@ body{
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
 }
 
-/* **********************PATMENT OPTIONS****************** */
+/* //////////////////////////////////////////////ABOUT US PAGE///////////////////////////////////////////////////// */
 
+.aboutUs{
+    width:100%;
+    height: auto;
+    margin:70px 0;
+    text-align: center;
+}
+
+.AboutUS{
+    background:white;
+    border:medium none;
+    padding:30px !important;
+    border-radius: 3px;
+    transition:0.3s;
+    border-style: double;
+}
+
+.AboutUS:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+}
+
+.AboutUS h1{
+    font-size: 1.5rem;
+    margin:20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+    color: #50d1c0;
+}
+
+
+/* //////////////////////////////////////////CONTACT PAGE/////////////////////////////// */
+.ContactUs{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(120,120,120,0.2),rgba(120,120,120,0.2)), url('../Real-Estate/Images/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0, 100% 65%, 50% 87%, 0 65%, 0 0); 
+    position: relative;
+}
+
+.ContactTitle{
+    width:100%;
+    height:auto;
+    position:absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    /* background-color:rgba(61, 61, 61, 0.77); */
+}
+
+
+/* **********************PATMENT OPTIONS****************** */
+.BuySection{
+    border-style: double;
+}
 .PaymentTitle{
     text-align: center;
-    color: white;
-    background: linear-gradient(rgba(120,120,120,0.2),rgba(120,120,120,0.2)),url('../Real-Estate/Images/Buybg.jpg'),no-repeat;
+    color: black;
+    /* background: linear-gradient(rgba(120,120,120,0.2),rgba(120,120,120,0.2)),url('../Real-Estate/Images/edwe.jpg'),no-repeat; */
 }
 .PaymentTitle h1{
     padding: 20px;
@@ -385,7 +444,7 @@ body{
 .PaymentTitle p{
     font-size: 1.2rem;
     padding-bottom:20px;
-    color: white;
+    color: black;
    
 }
 
@@ -400,7 +459,7 @@ color: black;
     padding-bottom:40px;
 }
 
-.buy a{
+.buy input[type="submit"]{
     border: 1px solid #50d1c0;
     border-radius: 100px;
     margin:0 5px;
@@ -412,17 +471,27 @@ color: black;
     line-height: 1.4;
     text-align: center;
 }
-
-.buy a:hover{
+/* 
+.buy input [type="submit"]:hover{
     color:white;
     background:#50d1c0;
     text-decoration: none;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
-}
+    
+} */
 
 .features{
     padding: 10px;
 }
+
+/* .ContactTitle p{
+    font-size: 25px;
+} */
+
+
+
+
+
 /* /////////////////////////////////////////////////////////////// */
 /* .searchInput{
     padding:10px 20px;
