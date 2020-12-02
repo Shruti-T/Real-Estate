@@ -31,19 +31,82 @@
 
 
     <title>HUB MARINE</title>
+    <!-- dark mode -->
+    <style>
+        @media(prefers-color-scheme:dark) {
+            .navbar {
+                background-color: black;
+            }
+
+            .nav-item a {
+                color: white !important;
+            }
+
+            .logo {
+                color: white;
+            }
+
+            .Homes {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+
+            .HeaderService {
+                background-color: #C6CBCE;
+                margin: 2px 0;
+                color: black;
+            }
+
+            .darkModeBg {
+                background-color: #AFB1B3;
+            }
+
+            .HomeCard {
+                background: #AFB1B3;
+            }
+
+            .card {
+                background-color: #595B5C;
+            }
+
+            .HomeCard a {
+                color: black;
+            }
+
+            .buybtn {
+                background: #595B5C !important;
+            }
+
+            .buybtn a {
+                border: 1px solid black;
+                color: black;
+            }
+
+            .card:hover .buybtn a:hover {
+                color: white;
+                background: black;
+            }
+
+            .AboutUS {
+                background: #595B5C;
+            }
+
+            .AboutUS h1 {
+                color: black;
+            }
+        }
+    </style>
 </head>
 
 <body onload="codeLoaded()">
 
     <div id="preloading">
     </div>
-
     <!-- ************Header part Starts****** -->
     <div class="head" id="menuBar">
         <nav class="navbar navbar-expand-lg ">
             <div class="container p-2">
 
-                <a class="navbar-brand logo font-weight-bold" style="color:black" href="index.html">Aqua Abode</a>
+                <a class="navbar-brand logo font-weight-bold" href="index.html">Aqua Abode</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -85,7 +148,8 @@
                         <img src="../Real-Estate-website/Images/card1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Inwood Bay</h5>
-                            <p class="card-text">This house is captivating, luxurious, and full of little details that
+                            <p class="card-text">This house is captivating, luxurious, and full of little details
+                                that
                                 will not disappoint!</p>
                             <p>
                                 Plot:255 and Lot Size (sqft): 3774</p>
@@ -117,7 +181,8 @@
                         <img src="../Real-Estate-website/Images/card3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Bed City</h5>
-                            <p class="card-text">Paradise found! Do not miss this elegantly updated gem, surrounded by
+                            <p class="card-text">Paradise found! Do not miss this elegantly updated gem, surrounded
+                                by
                                 flowers and expert landscaping!</p>
                             <p>
                                 Plot:214 and Lot Size (sqft): 3770</p>
@@ -135,7 +200,8 @@
                         <img src="../Real-Estate-website/Images/card4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Shell Sea</h5>
-                            <p class="card-text">This top floor 2 bd/1 bath unit has been tastefully updated with new
+                            <p class="card-text">This top floor 2 bd/1 bath unit has been tastefully updated with
+                                new
                                 carpet, flooring, paint & blinds.</p>
                             <p>
                                 Plot:494 and Lot Size (sqft): 891</p>
@@ -151,7 +217,8 @@
                         <img src="../Real-Estate-website/Images/card5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Rikers Reef</h5>
-                            <p class="card-text"> Smart home with Nest & Ring systems & WiFi dimmers throughout. Easy
+                            <p class="card-text"> Smart home with Nest & Ring systems & WiFi dimmers throughout.
+                                Easy
                                 commute to freeways & light rail.</p>
                             <p>
                                 Plot:994 and Lot Size (sqft): 1450</p>
@@ -218,7 +285,8 @@
                         <img src="../Real-Estate-website/Images/card9.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Sea Floria</h5>
-                            <p class="card-text">Turn-key & absolutely charming 3 bedrooms rambler. This home will charm
+                            <p class="card-text">Turn-key & absolutely charming 3 bedrooms rambler. This home will
+                                charm
                                 you the minute you step in</p>
                             <p>
                                 Plot:783 and Lot Size (sqft): 1160</p>

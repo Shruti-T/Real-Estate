@@ -12,10 +12,8 @@ $('.count').counterUp(
     }
 )
 
+
 var cost1 = 0, cost2 = 0, cost3 = 0, cost4 = 0;
-
-
-
 document.getElementById('park').addEventListener('click', function () {
 
     var check1 = document.getElementById('park');
@@ -76,31 +74,7 @@ function total() {
     document.getElementById('approx').innerHTML = `Approx. Charges on monthly basis for desired amenities $ ${totalCost}.`;
 }
 
+
 document.getElementById('submitVisit').onsubmit = function () {
     alert('Your form has been submitted successfully. Further deatails have been sent on your email.');
 }
-
-
-
-
-
-
-// document.getElementById('bookVisit').onclick = function () {
-
-
-//     var input1 = document.getElementById('inputName');
-//     var input2 = document.getElementById('inputMail');
-//     var input3 = document.getElementById('inputCity');
-//     var input4 = document.getElementById('inputPlot');
-//     var input5 = document.getElementById('inputDate');
-
-//     console.log(input1);
-
-//     if (input1 == true && input2 == true && input3 == true && input4 == true && input5 == true) {
-//         alert('cd');
-//     }
-//     else {
-//         alert('Please fill in the details.');
-//     }
-
-// }

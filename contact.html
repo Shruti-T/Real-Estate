@@ -32,17 +32,46 @@
 
     <title>HUB MARINE</title>
     <!-- dark mode -->
-    <!-- <style>
+    <style>
         @media(prefers-color-scheme:dark) {
             .navbar {
                 background-color: black;
             }
 
-            .Map {
-                background: blue;
+            .nav-item a {
+                color: white !important;
+            }
+
+            .logo {
+                color: white;
+            }
+
+            .ContactUs {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+
+            .PaymentTitle {
+                color: black;
+            }
+
+            .PaymentTitle p {
+                color: black;
+            }
+
+            .paymentchoices {
+                color: black;
+            }
+
+            .PaymentBox {
+                background-color: #4F5152;
+            }
+
+            .buy input[type="submit"] {
+                border: 1px solid black;
+                color: black;
             }
         }
-    </style> -->
+    </style>
 </head>
 
 <body onload="codeLoaded()">
@@ -55,7 +84,7 @@
         <nav class="navbar navbar-expand-lg ">
             <div class="container p-2">
 
-                <a class="navbar-brand logo font-weight-bold" style="color:black" href="index.html">Aqua Abode</a>
+                <a class="navbar-brand logo font-weight-bold" href="index.html">Aqua Abode</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -146,7 +175,6 @@
                         </div>
                         <div class="approx" id="approx"></div>
                         <div class="buy">
-                            <!-- <a href="" class="btn" id="bookVisit">BOOK</a> -->
                             <input type='submit' value="submit" name="book" class="btn" id="bookVisit">
                         </div>
 
@@ -154,11 +182,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
         <script src=" Main.js"></script>
 </body>
 
