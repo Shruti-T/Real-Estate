@@ -21,7 +21,7 @@ document.getElementById('search').onclick = function () {
     console.log(searchValue);
 
     if (searchValue == 'inwood bay' || searchValue == 'murky city' || searchValue == 'bed city' || searchValue == 'shell sea' || searchValue == 'rikers reef' || searchValue == 'sinkin square' || searchValue == 'green port' || searchValue == 'meadow sands' || searchValue == 'sea floria') {
-        window.location.href = 'Buy.html';
+        window.location.replace('Buy.html');
     }
     else if (searchValue == '') {
         alert('Please fill in the details');
